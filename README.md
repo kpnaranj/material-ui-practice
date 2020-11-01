@@ -1,30 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Server-side template with NextJS, Express and Babel
 
-## Getting Started
+Check:
+1. For beginners: for learning purposes
+2. Setup guide: for template
 
-First, run the development server:
+1. For beginners (Do it yourself): 
+This template is taken from: https://developerhandbook.com/react/getting-started-nextjs/ (without babel)Credits to developer: Jon Preece. Thanks. 
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+1. Set up next create app (using yarn) you can change to npm 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+yarn create next-app 
+--it will ask your project name
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+2. Install express 
+-- To run express and next tgether the json file needs to contain the two dependencies
 
-## Learn More
+--disadvantage: All dependencies are in one json file (backend and frontend)
 
-To learn more about Next.js, take a look at the following resources:
+use: yarn add express 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. create a folder called server (optional name)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+4. create index.js and set up express (use code from server/index.js as reference)
 
-## Deploy on Vercel
+5. Change dev :"next dev" for "node server/index.js" (it reference our server with calls our app)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+6. run using yarn dev (or any other setting)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+--With nodemon settings 
+
+1. Add nodemon: yarn add --dev nodemon
+2. Create a nodemon.json file (add settings code)
+--understand nodemon 
+    a. watch = check the file server for changes 
+    b. exec = execute node server/index.js
+    c. ext = find any extension with js
+3. Update the packages.json (add nodemon in dev)
+4. nodemon will connect to the json file 
+
+--With babel settings  
+1. Add the following dependencies
+@babel/core @babel/node @babel/preset-env
+as dependencies 
+
+2. Create a .babelrc (copy the sample code)
+--understanding .babelrc
+    a. presets: preset environment / add the features we need to this environment
+    b. plugins: use to transform other syntax in the projects (in this case jsx)
+
+3. Add babel-node instead of node in nodemon 
+4. Change variables require to import 
+5. Execute the server: yarn dev
