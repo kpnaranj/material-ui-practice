@@ -2,7 +2,7 @@ Server-side template with NextJS, Express and Babel
 
 Check:
 1. For beginners: for learning purposes
-2. Setup guide: for template
+2. Setup guide
 
 1. For beginners (Do it yourself): 
 This template is taken from: https://developerhandbook.com/react/getting-started-nextjs/ (without babel)Credits to developer: Jon Preece. Thanks. 
@@ -39,15 +39,26 @@ use: yarn add express
 4. nodemon will connect to the json file 
 
 --With babel settings  
-1. Add the following dependencies
-@babel/core @babel/node @babel/preset-env
-as dependencies 
+1. Add the following dependency 
+@babel/node to run babel-node 
+2. Create a babelrc (add babel configuration)
+--Understanding babelrc
+    a. Presets: next/babel replaces the 
+    configuration of @babel/env and @babel/core to the environment of next 
+    b. Plugings: Uses the babel-preset -stage-0 to add javascript features
+Note: More details of how it works can be found here: https://nextjs.org/docs/advanced-features/customizing-babel-config
 
-2. Create a .babelrc (copy the sample code)
---understanding .babelrc
-    a. presets: preset environment / add the features we need to this environment
-    b. plugins: use to transform other syntax in the projects (in this case jsx)
+2. Setup guide 
 
-3. Add babel-node instead of node in nodemon 
-4. Change variables require to import 
-5. Execute the server: yarn dev
+1. Download file
+
+git clone [FILE_NAME]
+example
+git clone dress-website
+
+2. Download dependencies 
+
+cd [FILE_NAME]
+yarn install or npm install 
+yarn dev or npm run dev 
+
