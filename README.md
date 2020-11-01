@@ -4,7 +4,7 @@ Check:
 1. For beginners: for learning purposes
 2. Setup guide
 
-1. For beginners (Do it yourself): 
+---1. For beginners (Do it yourself): 
 This template is taken from: https://developerhandbook.com/react/getting-started-nextjs/ (without babel)Credits to developer: Jon Preece. Thanks. 
 
 1. Set up next create app (using yarn) you can change to npm 
