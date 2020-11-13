@@ -60,5 +60,7 @@ git clone dress-website
 
 cd [FILE_NAME]
 yarn install or npm install 
-yarn dev or npm run dev 
+yarn dev or npm run dev
+
+Hello this is my second project
 
