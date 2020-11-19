@@ -12,6 +12,13 @@
 /.next/
 /out/
 
+# history 
+/server/.history
+/src/.history
+
+/src/.vscode
+/server/.history
+
 # production
 /build
 
