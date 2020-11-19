@@ -48,6 +48,9 @@ use: yarn add express
     b. Plugings: Uses the babel-preset -stage-0 to add javascript features
 Note: More details of how it works can be found here: https://nextjs.org/docs/advanced-features/customizing-babel-config
 
+--Implementing Material-UI 
+Follow the git repository https://github.com/mui-org/material-ui/tree/master
+
 ---2. Setup guide 
 
 1. Download file
