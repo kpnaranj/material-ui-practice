@@ -5,13 +5,13 @@ export const useStyles = makeStyles((theme) => ({
   menuSliderContainer: {
     width: 250,
     background: "#511",
-    height: "30rem",
+    height: "100%",
   },
   nav_Avatar: {
     display: "block",
     margin: "0.5rem auto",
     width: theme.spacing(13),
-    height: theme.spacing(13)
+    height: theme.spacing(13),
   },
   nav_Appbar: {
     backgroundColor: "#222",
@@ -20,6 +20,12 @@ export const useStyles = makeStyles((theme) => ({
     color: theme.palette.primary.main,
   },
   nav_Brand: {
+    color: "tan",
+  },
+  sidebar_Icon: {
+    color: "tan",
+  },
+  sidebar_Text: {
     color: "tan",
   },
 }));
