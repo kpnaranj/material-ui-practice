@@ -53,16 +53,6 @@ use: yarn add express
 --Implementing Material-UI
 Follow the git repository https://github.com/mui-org/material-ui/tree/master
 
---What is new in Material-UI?
-Material UI configuration now has an updated version to support React 17.0
-
---To avoid warnings when downloading material ui download the following dependencies
-
-yarn add @emotion/react @emotion/styled @material-ui/core@v5.0.0-alpha.16 @material-ui/icons@5.0.0-alpha.15 @material-ui/styles@5.0.0-alpha.15
-
---Material-UI supports nextjs but requires additional dependencies @emotion/react and @emotion/styled
-
-IT WILL NOT SHOW AN ERROR WHEN DOWNLOADING!!!
 
 ---2. Setup guide
 
