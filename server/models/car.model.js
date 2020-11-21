@@ -8,7 +8,6 @@ const CarSchema = new mongoose.Schema(
       required: true,
       max: 100,
       unique: false,
-      index: true,
     },
     make: {
       type: String,

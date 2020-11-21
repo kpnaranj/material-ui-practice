@@ -4,7 +4,8 @@ const FAQSchema = new mongoose.Schema({
   question: {
     type: {},
     required: true,
-    index: true,
+    min: 10,
+    max: 20000,
   },
 
   answer: {
