@@ -17,7 +17,7 @@
 /src/.history
 
 /src/.vscode
-/server/.history
+/server/.vscode
 
 # production
 /build
