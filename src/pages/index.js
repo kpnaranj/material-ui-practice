@@ -1,10 +1,12 @@
 import { Fragment } from "react";
-import Navbar from "../components/Navbar";
+import { Button } from "@material-ui/core";
 
 function Home() {
   return (
     <Fragment>
-      <Navbar />
+      <Button color="secondary" variant="outlined">
+        This is our first button{" "}
+      </Button>
     </Fragment>
   );
 }

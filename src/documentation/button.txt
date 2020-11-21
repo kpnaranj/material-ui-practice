@@ -1,0 +1,6 @@
+How to set up a button 
+disabled - default to false 
+to improve settings it is disabled> to pass everything 
+fullWidth - it displays the button full-size
+variant - to provide a version in the website
+
