@@ -4,9 +4,9 @@ import Link from "next/link";
 function Home() {
   return (
     <Fragment>
-      <Link href="/container">
+      <Link href="/faq">
         <Button color="secondary" variant="outlined">
-          Go to container
+          Go to FAQ
         </Button>
       </Link>
       <Link href="/grid">
