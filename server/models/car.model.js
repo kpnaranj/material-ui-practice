@@ -34,8 +34,10 @@ const CarSchema = new mongoose.Schema(
       lowercase: true,
     },
     details: {
-      type: String,
+      type: {},
       required: true,
+      min: 200,
+      max: 2000000,
     },
     kilometers: {
       type: Number,
@@ -52,7 +54,6 @@ const CarSchema = new mongoose.Schema(
   },
   { timestamp: true }
 );
-
 
 const Car = mongoose.model("Car", CarSchema);
 export default Car;

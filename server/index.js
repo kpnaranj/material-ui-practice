@@ -6,8 +6,9 @@ import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
 import morgan from "morgan";
 import mongoose from "mongoose";
-//import routes 
+//import routes
 import carRoutes from "./routes/car.routes";
+import faqRoutes from "./routes/faq.routes";
 //set up server
 const dev = process.env.NODE_ENV !== "production";
 const nextApp = next({ dev });
@@ -36,12 +37,13 @@ nextApp.prepare().then(() => {
   );
   app.use(cookieParser());
   //routes
-    app.use("/api", carRoutes);
-  //Send everything 
+  app.use("/api", carRoutes);
+  app.use("/api", faqRoutes);
+  //Send everything
   app.get("*", (req, res) => {
     return handle(req, res);
   });
-  //listen to the port 
+  //listen to the port
   app.listen(port, (err) => {
     if (err) throw err;
     console.log(`> Ready on http://localhost:${port}`);

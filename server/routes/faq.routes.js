@@ -1,10 +1,10 @@
 //dependencies
 import express from "express";
 //external dependecies
-import carCtrl from "../controllers/car.controller";
+import faqCtrl from "../controllers/faq.controller";
 //router
 const router = express.Router();
 
-router.get("/car", carCtrl.car);
+router.get("/faq", faqCtrl.faq);
 
 export default router;
