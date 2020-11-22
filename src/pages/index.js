@@ -1,19 +1,10 @@
 import { Fragment } from "react";
-import { Button } from "@material-ui/core";
+import Navbar from "../components/Navbar";
 import Link from "next/link";
 function Home() {
   return (
     <Fragment>
-      <Link href="/faq">
-        <Button color="secondary" variant="outlined">
-          Go to FAQ
-        </Button>
-      </Link>
-      <Link href="/grid">
-        <Button color="primary" variant="outlined">
-          Go to the grid
-        </Button>
-      </Link>
+      <Navbar />
     </Fragment>
   );
 }

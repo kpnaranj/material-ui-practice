@@ -1,20 +1,34 @@
 import { Fragment } from "react";
 import fetch from "isomorphic-fetch";
-function Faq({ questions }) {
-  if (!questions) {
-    return <div>Sorry we found questions </div>;
-  }
+import {
+  Accordion,
+  AccordionSummary,
+  Typography,
+  AccordionDetails,
+} from "@material-ui/core";
+import { ExpandMore } from "@material-ui/icons";
 
+import Navbar from "../components/Navbar";
+
+function Faq({ questions }) {
   return (
     <Fragment>
-      <h1>FAQ about us</h1>
+      <Navbar />
+      <h1>FAQ</h1>
       {questions.map((result, id) => {
         return (
-          <div key={id}>
-            <p>{result.question}</p>
-            <p>{result.answer}</p>
-            <p>{result.created_at}</p>
-          </div>
+          <Accordion key={id}>
+            <AccordionSummary
+              expandIcon={<ExpandMore />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <Typography>{result.question}</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>{result.answer}</Typography>
+            </AccordionDetails>
+          </Accordion>
         );
       })}
     </Fragment>
